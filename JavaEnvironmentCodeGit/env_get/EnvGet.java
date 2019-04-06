@@ -1,4 +1,3 @@
-package env_get;
 /*
  * https://docs.oracle.com/javase/tutorial/essential/environment/env.html
  */
@@ -29,7 +28,7 @@ public  class EnvGet {
 //For test    
 public static void main(String[] args)
     {   
-		String envVar = "USER";
+		String envVar = "PATH";
 		String envVar2 = "user";
 		EnvGet env = new EnvGet();
 		String resultEnvar = env.getEnv(envVar);
