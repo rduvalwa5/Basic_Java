@@ -1,4 +1,4 @@
-package Files;
+package javafiles;
 
 /* https://www.w3schools.com/java/java_files.asp 
 */
@@ -11,7 +11,7 @@ public class CreateFile {
 	  
     try { 
 //      File myObj = new File("filename.txt"); 
-      File myObj = new File("/Users/rduvalwa2/java-workspace/JavaFiles/src/Files/filename.txt");
+      File myObj = new File("filename.txt");
       if (myObj.createNewFile()) { 
         System.out.println("File created: " + myObj.getName()); 
       } else { 
