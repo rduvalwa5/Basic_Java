@@ -1,0 +1,62 @@
+https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-installing.html
+
+
+***************************
+MySQL Connector/J is a native Java driver that converts JDBC (Java Database Connectivity) calls into the network protocol used by the MySQL database.
+It lets developers working with the Java programming language easily build programs and applets that interact with MySQL and connect all corporate data, even in a heterogeneous environment.
+MySQL Connector/J is a Type IV JDBC driver and has a complete JDBC feature set that supports the capabilities of MySQL.
+Installation: copy the file mysql-connector-java-5.0.6-bin.jar to the directory /Library/Java/Extensions/.
+What's New in MySQL Connector/J
+
+Version 8.0.15:
+Default value of the connection property allowLoadLocalInfile has been changed to false. Applications that use the LOAD DATA LOCAL INFILE statement on MySQL Server needs to set this property to true explicitly
+Requirements for MySQL Connector/J
+
+Intel
+OS X 10.6 or later
+MySQL
+Java 1.7 or later
+
+***************************
+
+Chapter 4 Connector/J Installation
+
+Table of Contents     
+
+4.1 Installing Connector/J from a Binary Distribution
+4.2 Installing the Driver and Configuring the CLASSPATH
+4.3 Upgrading from an Older Version     
+4.4 Installing from the Development Source Tree
+4.5 Testing Connector/J
+
+************
+MySQL Connector/J is distributed as a .zip or .tar.gz archive, available for download from the Connector/J Download page. 
+
+https://dev.mysql.com/downloads/connector/j/
+https://dev.mysql.com/downloads/connector/
+
+MySQL offers standard database driver connectivity for using MySQL with applications and tools that are compatible with 
+industry standards ODBC and JDBC. Any system that works with ODBC or JDBC can use MySQL.
+
+Connector/ODBC      https://dev.mysql.com/downloads/connector/odbc/
+
+					mysql-connector-odbc-8.0.15-macos10.14-x86-64bit.dmg
+
+Standardized database driver for Windows, Linux, Mac OS X, and Unix platforms.
+************
+
+The archive contains the sources and the JAR archive named mysql-connector-java-version.jar.
+You can install the Connector/J package using either the binary or source distribution. The binary distribution provides the 
+easiest method for installation; the source distribution lets you customize your installation further. With either solution, 
+you manually add the Connector/J location to your Java CLASSPATH.
+
+If you are upgrading from a previous version, read the upgrade information in Section 4.3, “Upgrading from an Older Version” 
+before continuing.
+
+Connector/J is also available as part of the Maven project. For more information and to download the Connector/J JAR files, 
+see the Maven repository.
+
+Important
+You may also need to install the following third-party libraries on your system for Connector/J 8.0 to work:
+Protocol Buffers (required for using X DevAPI and for building Connector/J 8.0 from source)
+Javassist (only required for building Connector/J 8.0 from source)
